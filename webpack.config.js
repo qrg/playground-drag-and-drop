@@ -20,6 +20,11 @@ const pages = [
     template: path.resolve(src, 'index.html'),
     title: 'Playground Drag and Drop',
   },
+  {
+    script: path.resolve(src, 'html-drag-and-drop-api', 'index.ts'),
+    template: path.resolve(src, 'html-drag-and-drop-api', 'index.html'),
+    title: 'Using HTML Drag and Drop API',
+  },
 ].map((page) => {
   const s = path.parse(path.relative(src, page.script))
   const t = path.parse(path.relative(src, page.template))

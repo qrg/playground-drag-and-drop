@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      property="og:title"
+      content="<%= htmlWebpackPlugin.options.title %>"
+    />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <style>
+      :root {
+        --primary-color: #4471ee;
+        --border-color: #eaeaea;
+        --border-width: 8px;
+        --box-size: 256px;
+      }
+
+      [draggable] {
+        user-select: none;
+      }
+
+      .draggable-list {
+        margin-top: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(var(--box-size) * 3);
+        border: var(--border-width) solid var(--border-color);
+      }
+
+      .draggable-item {
+        box-sizing: border-box;
+        border: var(--border-width) solid var(--border-color);
+        width: var(--box-size);
+        height: var(--box-size);
+        font-size: 8rem;
+        font-weight: bold;
+        color: #ddd;
+        line-height: var(--box-size);
+        text-align: center;
+        background-color: #fafafa;
+        transition: ease 0.2s;
+      }
+
+      .draggable-item:hover {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+      }
+
+      .drag-start {
+        opacity: 0.4;
+      }
+      .drag-enter {
+        opacity: 0.2;
+        transform: scale(0.9);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="draggable-list">
+      <div class="draggable-item dropzone" draggable="true">A</div>
+      <div class="draggable-item dropzone" draggable="true">B</div>
+      <div class="draggable-item dropzone" draggable="true">C</div>
+      <div class="draggable-item dropzone" draggable="true">D</div>
+      <div class="draggable-item dropzone" draggable="true">E</div>
+      <div class="draggable-item dropzone" draggable="true">F</div>
+      <div class="draggable-item dropzone" draggable="true">G</div>
+      <div class="draggable-item dropzone" draggable="true">H</div>
+      <div class="draggable-item dropzone" draggable="true">I</div>
+    </div>
+  </body>
+</html>

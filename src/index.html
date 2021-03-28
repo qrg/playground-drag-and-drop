@@ -2,11 +2,14 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
+    <meta
+      property="og:title"
+      content="<%= htmlWebpackPlugin.options.title %>"
+    />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
@@ -18,6 +21,16 @@
   </head>
 
   <body>
-    <div class="root"></div>
+    <header>
+      <h1><a href="/"><%= htmlWebpackPlugin.options.title %></a></h1>
+    </header>
+    <main>
+      <ul>
+        <% htmlWebpackPlugin.options.templateParameters.pages.forEach(page => {
+        if (page.htmlPath === '/') return; %>
+        <li><a href="<%= page.htmlPath %>"><%= page.title %></a></li>
+        <% }); %>
+      </ul>
+    </main>
   </body>
 </html>

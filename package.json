@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development HMR=true webpack serve",
+    "test": "echo \"no test specified\" && exit 0",
     "build": "cross-env NODE_ENV=development webpack",
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",

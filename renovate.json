@@ -1,7 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["before 4pm"],
   "labels": ["dependencies"],
+  "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
@@ -30,11 +33,20 @@
     "automerge": true,
     "groupName": "Digest updates"
   },
-  "packageRules": [
+  "node": {
+    "supportPolicy": ["lts_latest"]
+  },
+  "regexManagers": [
     {
-      "description": "disable package.json > engines update",
-      "depTypeList": ["engines"],
-      "enabled": false
+      "fileMatch": ["^.github/workflows/.+\\.ya?ml$"],
+      "matchStrings": [
+        "name: Use Node.js v(?<currentValue>.+)\n",
+        "node-version: ['\"]?(?<currentValue>[^'\"]*)['\"]?"
+      ],
+      "depNameTemplate": "node",
+      "lookupNameTemplate": "nodejs/node",
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "node"
     }
   ]
 }

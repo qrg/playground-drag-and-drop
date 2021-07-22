@@ -57,12 +57,10 @@ const onDrop = (e: DragEvent) => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const draggableItems: NodeListOf<HTMLElement> = document.querySelectorAll(
-    '.draggable-item'
-  )
-  const dropzones: NodeListOf<HTMLElement> = document.querySelectorAll(
-    '.dropzone'
-  )
+  const draggableItems: NodeListOf<HTMLElement> =
+    document.querySelectorAll('.draggable-item')
+  const dropzones: NodeListOf<HTMLElement> =
+    document.querySelectorAll('.dropzone')
   draggableItems.forEach((el) => {
     el.addEventListener('dragstart', onDragStart)
     el.addEventListener('dragend', onDragEnd)

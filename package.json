@@ -29,7 +29,7 @@
     "@babel/preset-react": "7.16.7",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.7",
     "@types/node": "16.11.41",
-    "@types/react": "17.0.44",
+    "@types/react": "17.0.47",
     "@types/react-dom": "17.0.15",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",

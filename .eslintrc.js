@@ -8,7 +8,7 @@ const configs = [
   'plugin:import/errors',
   'plugin:import/warnings',
   'plugin:promise/recommended',
-  'plugin:node/recommended',
+  'plugin:n/recommended',
   'plugin:react/recommended',
   'plugin:react-hooks/recommended',
   'plugin:jsx-a11y/recommended',
@@ -76,18 +76,13 @@ const rulesTs = {
   '@typescript-eslint/no-extra-non-null-assertion': 'error',
   '@typescript-eslint/prefer-nullish-coalescing': 'error',
   '@typescript-eslint/prefer-optional-chain': 'error',
-  'node/no-unsupported-features/es-syntax': [
+  'n/no-unsupported-features/es-syntax': [
     'error',
     {
       ignores: ['modules'],
     },
   ],
-  'node/no-unpublished-import': [
-    'error',
-    {
-      tryExtensions: ['.js', '.json', '.node', '.jsx', '.ts', '.tsx', '.d.ts'],
-    },
-  ],
+  'n/no-unpublished-import': 'error',
 }
 
 module.exports = {
@@ -117,7 +112,7 @@ module.exports = {
       files: ['./webpack.config.js'],
       rules: {
         ...rules,
-        'node/no-unpublished-require': [
+        'n/no-unpublished-require': [
           'error',
           {
             allowModules: [

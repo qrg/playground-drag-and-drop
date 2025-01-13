@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=18.20.4"
+    "node": ">=18.20.5"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development HMR=true webpack serve",
@@ -28,7 +28,7 @@
     "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.25.9",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.15",
-    "@types/node": "18.19.63",
+    "@types/node": "18.19.70",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@typescript-eslint/eslint-plugin": "5.62.0",

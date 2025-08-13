@@ -50,7 +50,7 @@
     "react-refresh": "0.17.0",
     "ts-loader": "9.5.2",
     "typescript": "5.9.2",
-    "webpack": "5.99.9",
+    "webpack": "5.101.1",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "5.2.2"
   }

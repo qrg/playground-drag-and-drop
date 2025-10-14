@@ -1376,10 +1376,10 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.7.tgz#b89ddf2cd83b4feafcc4e2ea41afdfb95a0d194f"
   integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
 
-"@types/react@18.3.24":
-  version "18.3.24"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.24.tgz#f6a5a4c613242dfe3af0dcee2b4ec47b92d9b6bd"
-  integrity sha512-0dLEBsA1kI3OezMBF8nSsb7Nk19ZnsyE1LLhB8r27KbgU5H4pvuqZLdtE+aUkJVoXgTVuA+iLIwmZ0TuK4tx6A==
+"@types/react@18.3.26":
+  version "18.3.26"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.26.tgz#4c5970878d30db3d2a0bca1e4eb5f258e391bbeb"
+  integrity sha512-RFA/bURkcKzx/X9oumPG9Vp3D3JUgus/d0b67KB0t5S/raciymilkOa66olh78MUI92QLbEJevO7rvqU/kjwKA==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -5065,10 +5065,10 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-refresh@0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.17.0.tgz#b7e579c3657f23d04eccbe4ad2e58a8ed51e7e53"
-  integrity sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==
+react-refresh@0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.18.0.tgz#2dce97f4fe932a4d8142fa1630e475c1729c8062"
+  integrity sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==
 
 react@18.3.1:
   version "18.3.1"
